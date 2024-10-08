@@ -62,7 +62,7 @@ async def recognize_song(filename):
     if os.path.exists(filename):  # Check if the file exists before calling Shazamio
         shazam = Shazam()
         print(f"Identifying song from file: {filename}")
-        out = await shazam.recognize(r'C:\Users\Tristen Dsouza\Desktop\snippet.wav')
+        out = await shazam.recognize(r'C:\Users\User Name\Desktop\snippet.wav') #depends where your snippet.wav audio file is saved
         if out and "track" in out:
             print("Song found!")
             print(f"Song: {out['track']['title']}")
